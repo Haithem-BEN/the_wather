@@ -1,9 +1,9 @@
 body {
     background-color: #f5f7fa !important;
-    color: red;
 }
 nav {
     background-color: #343a40;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px 200px;
@@ -16,4 +16,11 @@ nav ul {
 }
 nav ul a {
     padding: 0 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 200px;
 }
