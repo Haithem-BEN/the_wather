@@ -3,10 +3,8 @@ body {
 }
 nav {
     background-color: #343a40;
-    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 200px;
 }
 nav ul {
     display: flex;
@@ -16,11 +14,16 @@ nav ul {
 }
 nav ul a {
     padding: 0 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #2790ff;
 }
 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 30px 200px;
+    padding: 0 200px;
 }
