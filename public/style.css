@@ -4,4 +4,16 @@ body {
 }
 nav {
     background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    font-size: 1.3rem;
+    list-style: none;
+}
+nav ul a {
+    padding: 0 20px;
 }
