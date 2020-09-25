@@ -24,6 +24,13 @@ a:hover {
     text-decoration: none;
     color: #2790ff;
 }
+#msgLocation {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
 
 footer {
     position: absolute;
