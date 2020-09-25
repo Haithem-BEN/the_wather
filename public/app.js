@@ -2,17 +2,17 @@
 const sendQForm = document.querySelector("#sendQForm");
 const sendQ = document.querySelector("#sendQ");
 const locationInputEle = document.querySelector("#location");
+const msgLocation = document.querySelector("#msgLocation");
 
 const getWeatherData = () => {
     fetch(`/api?q=${locationInputEle.value}`)
         .then((res) => res.json())
-        .then((res) =>
-            console.log(
-                `
-                    الجو: ${res.current.condition.text}
-                    درجة الحرارة: ${res.current.feelslike_c}
-                `
-            )
+        .then(
+            (res) =>
+                (msgLocation.innerHTML = `
+                    <p>الجو: ${res.current.condition.text}</p>
+                    <p>درجة الحرارة: ${res.current.feelslike_c}</p>
+                `)
         );
 };
 
