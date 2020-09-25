@@ -39,6 +39,9 @@ main form > div {
 main form .btn-group {
     width: 100% !important;
 }
+main form input {
+    text-align: center;
+}
 
 footer {
     position: absolute;
