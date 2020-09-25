@@ -12,7 +12,7 @@ const getWeatherData = () => {
                 (msgLocation.innerHTML = `
                     <p>${locationInputEle.value}</p>
                     <p>${res.current.condition.text}</p>
-                    <p>درجة الحرارة: ${res.current.feelslike_c}</p>
+                    <p>${res.current.feelslike_c}&deg;</p>
                 `)
         );
 };
