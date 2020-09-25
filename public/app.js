@@ -10,7 +10,6 @@ const getWeatherData = () => {
         .then(
             (res) =>
                 (msgLocation.innerHTML = `
-                    <p>${locationInputEle.value}</p>
                     <p>${res.current.condition.text}</p>
                     <p>${res.current.feelslike_c}&deg;</p>
                 `)
