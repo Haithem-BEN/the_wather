@@ -11,7 +11,7 @@ const getWeatherData = () => {
             (res) =>
                 (msgLocation.innerHTML = `
                     <p>${res.current.condition.text}</p>
-                    <p>${res.current.feelslike_c}&deg;</p>
+                    <p>&deg;${res.current.feelslike_c}</p>
                 `)
         );
 };
