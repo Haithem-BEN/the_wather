@@ -6,6 +6,7 @@ const hbs = require("hbs");
 
 // Init The Server
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -77,4 +78,4 @@ app.get("*", (req, res) => {
 });
 
 // Start The Server
-app.listen(3000);
+app.listen(port);
