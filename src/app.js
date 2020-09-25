@@ -8,8 +8,6 @@ const hbs = require("hbs");
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.json());
-
 // Define paths for Express config
 const publicDirPath = path.join(__dirname, "../public");
 const viewsDirPath = path.join(__dirname, "../templates/views");
